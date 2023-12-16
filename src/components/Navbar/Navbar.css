@@ -1,0 +1,73 @@
+.n-wrapper {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  top: 0;
+}
+.n-left {
+  flex: 1;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  gap: 2rem;
+}
+
+.n-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.n-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 400;
+}
+
+.n-list {
+  flex: 10;
+}
+.n-list > ul {
+  display: flex;
+  gap: 2rem;
+  margin-right: 4rem;
+}
+
+.n-list > ul :hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.n-button {
+  flex: 2;
+}
+
+@media screen and (max-width: 480px) {
+  .n-list {
+    display: none;
+  }
+}
+/* App.css */
+.app-container {
+  position: relative; /* Make the container position relative */
+  padding-top: 0; /* Add padding to give space for the logo */
+}
+
+.logo {
+  position: absolute; /* Position the logo absolutely */
+  top: 10px; /* Position it at the top */
+  left: 0; /* Position it at the left */
+  width: 0; /* Adjust the width as needed */
+  height: 0; /* Maintain aspect ratio */
+}
+
+.your-class {
+  align-items: start;
+}
+
+.your-class {
+  align-items: -webkit-flex-start; /* Safari */
+  align-items: -ms-flex-start; /* IE 11 */
+  align-items: flex-start;
+}
